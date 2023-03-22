@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Gráfica</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		label {
+			margin-bottom: 10px;
+		}
+
+		input[type="text"] {
+			padding: 5px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 300px;
+		}
+
+		button {
+			padding: 10px;
+			border: none;
+			background-color: #008CBA;
+			color: white;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+			width: 100px;
+			font-weight: bold;
+		}
+
+		canvas {
+			border: 1px solid #ccc;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Calculadora Gráfica</h1>
+		<form>
+			<label for="funcion">Función:</label>
+			<input type="text" id="funcion" name="funcion">
+			<button type="button" onclick="dibujarGrafica()">Dibujar</button>
+		</form>
+		<canvas id="grafica" width="500" height="500"></canvas>
+	</div>
+
+	<script>
+		function dibujarGrafica() {
+			// Código para dibujar la gráfica aquí
+		}
+	</script>
+</body>
+</html>
